@@ -35,7 +35,7 @@ jobs:
           registry-url: https://npm.pkg.github.com
           scope: '@evidenceprime'
       - name: Enable yarn berry
-        run: corepack enable
+        run: corepack enable && yarn set version berry
       - name: Install dependencies
         run: yarn install --immutable
         env:
