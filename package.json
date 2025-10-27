@@ -36,12 +36,14 @@
     "./package.json": "./package.json"
   },
   "scripts": {
+    "build": "echo 'No build step required.'",
     "test": "jest",
     "posttest": "npm run lint",
     "pretest:ci": "npm run lint",
     "test:coverage": "jest --coverage",
     "lint": "eslint --ignore-pattern='!.*.js' .",
-    "lint:fix": "eslint --fix --ignore-pattern='!.*.js' ."
+    "lint:fix": "eslint --fix --ignore-pattern='!.*.js' .",
+    "release": "npm run build && npm publish"
   },
   "dependencies": {
     "lodash.clonedeep": "4.5.0",
