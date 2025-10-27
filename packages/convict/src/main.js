@@ -8,6 +8,9 @@
 const fs = require('fs')
 const parseArgs = require('yargs-parser')
 const cloneDeep = require('lodash.clonedeep')
+const isEmail = require('validator/lib/isEmail')
+const isURL = require('validator/lib/isURL')
+const isIP = require('validator/lib/isIP')
 
 // Forbidden key paths, for protection against prototype pollution
 const FORBIDDEN_KEY_PATHS = [
@@ -43,7 +46,7 @@ function isPort(x) {
 /**
  * Checks if x is a windows named pipe
  *
- * @see https://msdn.microsoft.com/en-us/library/windows/desktop/aa365783(v=vs.85).aspx
+ * @see https://learn.microsoft.com/en-us/windows/win32/ipc/pipe-names
  * @param {*} x
  * @returns {Boolean}
  */
@@ -69,6 +72,15 @@ const types = {
     if (!isWindowsNamedPipe(x)) {
       assert(isPort(x), 'must be a windows named pipe or a number within range 0 - 65535')
     }
+  },
+  email: function(x) {
+    assert(isEmail(x), 'must be an email address')
+  },
+  ipaddress: function(x) {
+    assert(isIP(x), 'must be an IP address')
+  },
+  url: function(x) {
+    assert(isURL(x, {require_tld: false}), 'must be a URL')
   }
 }
 // alias
@@ -414,6 +426,9 @@ function coerce(k, v, schema, instance) {
     case 'array': v = v.split(','); break
     case 'object': v = JSON.parse(v); break
     case 'regexp': v = new RegExp(v); break
+    case 'email':
+    case 'ipaddress':
+    case 'url': v => v.toString(); break
     default:
         // TODO: Should we throw an exception here?
     }
