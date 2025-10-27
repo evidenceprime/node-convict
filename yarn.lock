@@ -2794,9 +2794,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"coveralls@npm:3.1.0":
-  version: 3.1.0
-  resolution: "coveralls@npm:3.1.0"
+"coveralls@npm:3.1.1":
+  version: 3.1.1
+  resolution: "coveralls@npm:3.1.1"
   dependencies:
     js-yaml: "npm:^3.13.1"
     lcov-parse: "npm:^1.0.0"
@@ -2804,8 +2804,8 @@ __metadata:
     minimist: "npm:^1.2.5"
     request: "npm:^2.88.2"
   bin:
-    coveralls: ./bin/coveralls.js
-  checksum: 10c0/33c35c72909e95feb55202165316124d153555863306a27de0003454f7baf1c788f9d08a547096a201992d1d96efb4a9025c4082b584054b016f1a56b267a398
+    coveralls: bin/coveralls.js
+  checksum: 10c0/9ada8daa6a93064f966cf070b1a6c0bb112b00502c67ce0b3047464b83a026bb60405b23abcd9888521458b28f111052cb353af6878a098cd748954df75faa6d
   languageName: node
   linkType: hard
 
@@ -2965,10 +2965,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"deep-object-diff@npm:1.1.0":
-  version: 1.1.0
-  resolution: "deep-object-diff@npm:1.1.0"
-  checksum: 10c0/74dabb27baf6edf8bc9b6c2e40ed2a5e143e2143d142ea6d7c366e29492b393deac1667cef2f3bf605dfdaca12fb07afce865426b041c681f7352ea1694dbac8
+"deep-object-diff@npm:1.1.9":
+  version: 1.1.9
+  resolution: "deep-object-diff@npm:1.1.9"
+  checksum: 10c0/12cfd1b000d16c9192fc649923c972f8aac2ddca4f71a292f8f2c1e2d5cf3c9c16c85e73ab3e7d8a89a5ec6918d6460677d0b05bd160f7bd50bb4816d496dc24
   languageName: node
   linkType: hard
 
@@ -5616,18 +5616,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json5@npm:2.2.0":
-  version: 2.2.0
-  resolution: "json5@npm:2.2.0"
-  dependencies:
-    minimist: "npm:^1.2.5"
-  bin:
-    json5: lib/cli.js
-  checksum: 10c0/fbe021f69fa100f0a863e5ab9105ead3971ad5141e7c0dc5134c6148545dae98a69602fb8f9f4dd65af0db7ca00887bf5b35af60be34c10f58fb5fc1f2366a4e
-  languageName: node
-  linkType: hard
-
-"json5@npm:^2.2.3":
+"json5@npm:2.2.3, json5@npm:^2.2.3":
   version: 2.2.3
   resolution: "json5@npm:2.2.3"
   bin:
@@ -6447,12 +6436,12 @@ __metadata:
   resolution: "node-convict@workspace:."
   dependencies:
     "@lerna-lite/cli": "npm:1.1.1"
-    coveralls: "npm:3.1.0"
-    deep-object-diff: "npm:1.1.0"
+    coveralls: "npm:3.1.1"
+    deep-object-diff: "npm:1.1.9"
     eslint: "npm:7.26.0"
     jest: "npm:26.6.3"
     js-yaml: "npm:4.1.0"
-    json5: "npm:2.2.0"
+    json5: "npm:2.2.3"
     toml: "npm:3.0.0"
   languageName: unknown
   linkType: soft
