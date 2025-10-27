@@ -2,7 +2,7 @@
 
 /* eslint-disable no-process-exit */
 
-const path = require('path')
+const path = require('node:path')
 
 const convict = require('../../src/main.js')
 
