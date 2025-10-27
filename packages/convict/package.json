@@ -10,6 +10,9 @@
     "schema",
     "nested",
     "validation",
+    "email",
+    "ipaddress",
+    "url",
     "customize",
     "env",
     "environment",
@@ -34,6 +37,7 @@
   ],
   "dependencies": {
     "lodash.clonedeep": "4.5.0",
+    "validator": "13.6.0",
     "yargs-parser": "20.2.7"
   }
 }
