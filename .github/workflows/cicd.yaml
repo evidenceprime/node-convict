@@ -27,6 +27,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Enable corepack
+        run: corepack enable
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -34,8 +36,6 @@ jobs:
           cache: yarn
           registry-url: https://npm.pkg.github.com
           scope: '@evidenceprime'
-      - name: Enable yarn berry
-        run: corepack enable && yarn set version berry
       - name: Install dependencies
         run: yarn install --immutable
         env:
