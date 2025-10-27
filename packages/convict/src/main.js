@@ -46,7 +46,7 @@ function isPort(x) {
 /**
  * Checks if x is a windows named pipe
  *
- * @see https://msdn.microsoft.com/en-us/library/windows/desktop/aa365783(v=vs.85).aspx
+ * @see https://learn.microsoft.com/en-us/windows/win32/ipc/pipe-names
  * @param {*} x
  * @returns {Boolean}
  */
