@@ -2734,27 +2734,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"convict-format-with-moment@workspace:packages/convict-format-with-moment":
-  version: 0.0.0-use.local
-  resolution: "convict-format-with-moment@workspace:packages/convict-format-with-moment"
-  dependencies:
-    moment: "npm:2.29.1"
-  languageName: unknown
-  linkType: soft
-
-"convict-format-with-validator@workspace:packages/convict-format-with-validator":
-  version: 0.0.0-use.local
-  resolution: "convict-format-with-validator@workspace:packages/convict-format-with-validator"
-  dependencies:
-    validator: "npm:13.6.0"
-  languageName: unknown
-  linkType: soft
-
 "convict@workspace:packages/convict":
   version: 0.0.0-use.local
   resolution: "convict@workspace:packages/convict"
   dependencies:
     lodash.clonedeep: "npm:4.5.0"
+    validator: "npm:13.6.0"
     yargs-parser: "npm:20.2.7"
   languageName: unknown
   linkType: soft
@@ -6370,13 +6355,6 @@ __metadata:
   version: 1.0.1
   resolution: "modify-values@npm:1.0.1"
   checksum: 10c0/6acb1b82aaf7a02f9f7b554b20cbfc159f223a79c66b0a257511c5933d50b85e12ea1220b0a90a2af6f80bc29ff784f929a52a51881867a93ae6a12ce87a729a
-  languageName: node
-  linkType: hard
-
-"moment@npm:2.29.1":
-  version: 2.29.1
-  resolution: "moment@npm:2.29.1"
-  checksum: 10c0/2617e383c0e0f910696214d026b9742173ea1916775d2023b39fd7d5fc3fae694f67c17876d154e246b139ad2a8028c42b2898c66cd665316b61c18453a5103f
   languageName: node
   linkType: hard
 

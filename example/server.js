@@ -4,9 +4,6 @@ const path = require('path')
 const http = require('http')
 
 const convict = require('../packages/convict/src/main.js')
-const convict_format_with_validator = require('../packages/convict-format-with-validator/src/main.js')
-
-convict.addFormat(convict_format_with_validator.ipaddress)
 
 const conf = convict({
   ip: {

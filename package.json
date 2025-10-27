@@ -11,9 +11,7 @@
     "lint:fix": "eslint --fix --ignore-pattern='!.*.js' ."
   },
   "workspaces": [
-    "packages/convict",
-    "packages/convict-format-with-validator",
-    "packages/convict-format-with-moment"
+    "packages/convict"
   ],
   "devDependencies": {
     "@lerna-lite/cli": "1.1.1",
