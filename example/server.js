@@ -1,9 +1,9 @@
 'use strict'
 
-const path = require('path')
-const http = require('http')
+const path = require('node:path')
+const http = require('node:http')
 
-const convict = require('../packages/convict/src/main.js')
+const convict = require('../src/main.js')
 
 const conf = convict({
   ip: {

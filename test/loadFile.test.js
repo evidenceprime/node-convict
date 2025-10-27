@@ -1,6 +1,6 @@
 'use strict'
 
-const path = require('path')
+const path = require('node:path')
 const json5 = require('json5')
 const yaml = require('js-yaml')
 const toml = require('toml')

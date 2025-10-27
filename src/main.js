@@ -5,7 +5,7 @@
  */
 'use strict'
 
-const fs = require('fs')
+const fs = require('node:fs')
 const parseArgs = require('yargs-parser')
 const cloneDeep = require('lodash.clonedeep')
 const isEmail = require('validator/lib/isEmail')

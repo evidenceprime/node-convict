@@ -91,4 +91,4 @@ vscode
 .cursorrules
 
 *~
-packages/convict/test/coverage
+tests/coverage
