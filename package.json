@@ -1,5 +1,5 @@
 {
-  "name": "node-convict",
+  "name": "@evidenceprime/convict",
   "private": true,
   "version": "6.2.4",
   "description": "Featureful configuration management library for Node.js (nested structure, schema validation, etc.)",
