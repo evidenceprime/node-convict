@@ -5,7 +5,6 @@
     "test": "jest",
     "posttest": "npm run lint",
     "pretest:ci": "npm run lint",
-    "test:ci": "npm run test:coverage -- --coverageReporters=text-lcov | coveralls",
     "test:coverage": "jest --coverage",
     "lint": "eslint --ignore-pattern='!.*.js' .",
     "lint:fix": "eslint --fix --ignore-pattern='!.*.js' ."
@@ -14,10 +13,9 @@
     "packages/convict"
   ],
   "devDependencies": {
-    "coveralls": "3.1.1",
     "deep-object-diff": "1.1.9",
     "eslint": "7.26.0",
-    "jest": "26.6.3",
+    "jest": "30.2.0",
     "js-yaml": "4.1.0",
     "json5": "2.2.3",
     "toml": "3.0.0"
