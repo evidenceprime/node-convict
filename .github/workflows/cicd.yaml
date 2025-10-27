@@ -20,13 +20,13 @@ permissions:
 jobs:
   buildAndPublish:
     name: Build (and publish) to NPM (GH)
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
       packages: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -53,5 +53,4 @@ jobs:
           title: Convict
           subtitle: ${{ github.event.head_commit.message }}
           webhookUrl: ${{ secrets.GOOGLE_CHAT_WEBHOOK_URL }}
-          threadKey: <thread-key>
           status: ${{ job.status }}
