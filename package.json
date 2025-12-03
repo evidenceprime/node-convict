@@ -1,6 +1,6 @@
 {
   "name": "@evidenceprime/convict",
-  "version": "6.2.4",
+  "version": "6.2.5",
   "description": "Featureful configuration management library for Node.js (nested structure, schema validation, etc.)",
   "license": "Apache-2.0",
   "homepage": "https://github.com/evidenceprime/node-convict#readme",
